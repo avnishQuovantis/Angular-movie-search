@@ -1,0 +1,97 @@
+<div class="container">
+        <form class="signup" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                formControlName="username"
+                class="form-control"
+              />
+              <span
+                class="help-block" *ngIf="
+                  signupForm.get('username').touched &&
+                  signupForm.get('username').invalid
+                "
+              >
+             This name is required</span
+                >
+            
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input
+                type="text"
+                formControlName="email"
+                id="email"
+                class="form-control"
+              />
+              <span
+                class="help-block" *ngIf="
+                  signupForm.get('email').touched &&
+                  signupForm.get('email').invalid
+                "
+              >
+              <span
+                class="help-block" *ngIf="
+                  signupForm.get('email').errors['required']
+                "
+              >
+             Email  is required</span
+                >
+                <span
+                class="help-block" *ngIf="
+                 
+                  signupForm.get('email').errors['email']
+                "
+              >
+             please enter correct email </span
+                ></span
+                >
+             
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input
+                  type="password"
+                  id="password"
+                  formControlName="password"
+                  class="form-control"
+                />
+                <span
+                  class="help-block" *ngIf="
+                    signupForm.get('password').touched &&
+                    signupForm.get('password').invalid
+                  "
+                >
+             Password is required</span
+                  >
+              
+              </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  formControlName="age"
+                  id="age"
+                  class="form-control"
+                />
+                
+              </div>
+              <div class="form-group">
+                <label for="address">address</label>
+                <input
+                  type="text"
+                  formControlName="address"
+                  id="address"
+                  class="form-control"
+                />
+             
+              </div>
+       
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+  

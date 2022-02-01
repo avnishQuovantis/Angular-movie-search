@@ -1,0 +1,30 @@
+<div class="usersContainer">
+  <div class="users-list">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h5>Movies</h5>
+      </li>
+      <li class="list-group-item" routerLinkActive="active text-highlight">
+        <a routerLink="create" class="btn">
+          Create <i class="fas fa-plus-circle"></i>
+        </a>
+      </li>
+      <li
+        routerLinkActive="active text-highlight"
+        *ngFor="let movie of allMovies"
+        class="list-group-item movieList"
+        aria-current="true"
+      >
+        <a class="btn" [routerLink]="['/movies', movie.id]">
+          {{ movie.title }}</a
+        >
+        <button class="btn btn-danger deleteBtn" (click)="deleteMovie(i)">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="user">
+    <router-outlet></router-outlet>
+  </div>
+</div>

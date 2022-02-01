@@ -1,0 +1,11 @@
+
+.create-user *{
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+.create-user button{
+  width: 100%;
+}
+.invalid-input{
+  border:2px solid red;
+}

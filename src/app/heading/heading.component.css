@@ -1,0 +1,30 @@
+.heading{
+    display: flex;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+
+.heading >a:first-child{
+   padding:0.5rem;
+   font-size: 2rem;
+   
+}
+.heading >a{
+    padding:0.2rem 0.4rem;
+    font-size: 1.2rem;
+    border-radius:0.5rem;
+
+}
+.searchInput{
+    width: 40%;
+}
+.highlight{
+    font-weight: 500;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.035);
+}
+

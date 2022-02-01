@@ -1,0 +1,30 @@
+
+.series{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    
+}
+.series h5{
+    /* font-size: 0.9vw; */
+    margin-bottom:0.2rem;
+}
+.series img{
+    height:20vw
+}
+.bold{
+    font-weight: 500;
+}
+
+.series-details {
+    
+}
+.series-button{
+    font-size: 0.8vw;
+    margin:0.2rem auto;
+    padding: 0.2rem 0.4rem;
+}

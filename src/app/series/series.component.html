@@ -1,0 +1,30 @@
+<div class="series-container">
+  <div class="series-list">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h5>Series</h5>
+      </li>
+      <li class="list-group-item" routerLinkActive="active text-highlight">
+        <a routerLink="create" class="btn">
+          Create <i class="fas fa-plus-circle"></i>
+        </a>
+      </li>
+      <li
+        routerLinkActive="active "
+        *ngFor="let series of allSeries; let i = index"
+        class="list-group-item seriesList"
+        aria-current="true"
+      >
+        <a class="btn" [routerLink]="['/series', series.id]">
+          {{ series.title }}</a
+        >
+        <button class="btn btn-danger deleteBtn" (click)="deleteSeries(i)">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="series">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+input.ng-invalid.ng-touched{
+    border:2px solid red
+}
+.signup{
+    width:55%;
+    margin:auto;
+}

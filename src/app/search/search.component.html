@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="search-container">
+      <div
+        class="search-card"
+        *ngFor="let item of searchItems"
+        (click)="goToItem(item)"
+      >
+        <img [src]="item.image" alt="..." />
+        <div class="search-card-body">
+          <h6 class="">{{ item.title }}</h6>
+          <p class="">
+            <span style="font-weight: bold">catagory </span>{{ item.catagory }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

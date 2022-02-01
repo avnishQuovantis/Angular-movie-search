@@ -1,0 +1,20 @@
+<div class="series">
+  <img [src]="series['image']" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ series.name }}</h5>
+
+    <div class="series-details">
+      <span class="bold">rating </span>{{ series.rating }}
+    </div>
+    <div class="series-details">
+      <span class="bold">language </span>{{ series.language }}
+    </div>
+    <div class="series-details">
+      <span class="bold">country </span>{{ series.country }}
+    </div>
+
+    <div class="series-details">
+      <span class="bold">plot </span> {{ series.summary }}
+    </div>
+  </div>
+</div>

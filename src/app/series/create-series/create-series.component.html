@@ -1,0 +1,99 @@
+<div class="series">
+  <div class="series-left"></div>
+  <div class="series-right">
+    <h3 style="color: white; text-align: center; margin-bottom: 2rem">
+      Create Series
+    </h3>
+    <form (ngSubmit)="createPost()" [formGroup]="seriesForm">
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          aria-describedby="name"
+          placeholder="Enter name"
+          name="name"
+          formControlName="title"
+        />
+        <label for="floatingInputGrid">Title</label>
+      </div>
+
+      <div class="form-floating">
+        <input
+          type="number"
+          class="form-control"
+          id="floatingInputGrid"
+          aria-describedby="rating"
+          placeholder="Enter rating"
+          formControlName="rating"
+          required
+        />
+        <label for="floatingInputGrid">rating</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          aria-describedby="genre"
+          placeholder="Enter genre"
+          formControlName="genre"
+        />
+        <label for="floatingInputGrid">genre</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          aria-describedby="summary"
+          placeholder="Enter summary"
+          formControlName="summary"
+        />
+        <label for="floatingInputGrid">summary</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGrid"
+          aria-describedby="language"
+          placeholder="Enter language"
+          formControlName="language"
+        />
+        <label for="floatingInputGrid">language</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputValue"
+          aria-describedby="country"
+          placeholder="Enter country"
+          formControlName="country"
+        />
+        <label for="floatingInputValue" for="country">country</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputValue"
+          aria-describedby="image"
+          placeholder="Enter image"
+          formControlName="image"
+        />
+        <label for="floatingInputValue" for="image">Image url</label>
+      </div>
+      <div class="input-group">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="seriesForm.invalid"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
