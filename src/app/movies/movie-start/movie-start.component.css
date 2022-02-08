@@ -1,4 +1,9 @@
 .start-movie{
+    height: 100%;
+    padding:1rem;
+text-shadow: 2px 2px 8px black;
     background-image: url('https://www.indiewire.com/wp-content/uploads/2019/12/best-movie-posters-2019.png?w=690');
-    filter:brightness(50%)
+}
+h1{
+    color:whitesmoke
 }
