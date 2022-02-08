@@ -3,3 +3,10 @@
     width: 75%;
     margin:2rem auto
 }
+img{
+    filter:brightness(75%)
+}
+.caption{
+    color:whitesmoke;
+    text-shadow: 1px 1px 9px black;
+}

@@ -1,13 +1,17 @@
-<div class="container">
-  <div class="row">
-    <form class="create-user" (ngSubmit)="createPost()" #movieForm="ngForm">
+<div class="movie">
+  <div class="movie-left"></div>
+  <div class="movie-right">
+    <h3 style="color: white; text-align: center; margin-bottom: 2rem">
+      Create Movies
+    </h3>
+    <form (ngSubmit)="createPost()" #movieForm="ngForm">
       <div class="form-floating">
         <input
           type="text"
           class="form-control"
           id="floatingInputGrid"
           aria-describedby="name"
-          placeholder="Enter Title"
+          placeholder="Enter name"
           ngModel
           name="title"
           required
@@ -15,9 +19,6 @@
           [ngClass]="{ 'invalid-input': title.touched }"
         />
         <label for="floatingInputGrid">Title</label>
-        <span class="help-block" *ngIf="title.invalid && title.touched"
-          >Please enter title</span
-        >
       </div>
 
       <div class="form-floating">
@@ -38,7 +39,6 @@
           type="text"
           class="form-control"
           id="floatingInputGrid"
-          aria-describedby="genre"
           placeholder="Enter genre"
           ngModel
           name="genre"
@@ -47,18 +47,19 @@
         <label for="floatingInputGrid">genre</label>
       </div>
       <div class="form-floating">
-        <input
+        <textarea
           type="text"
           class="form-control"
-          id="floatingInputGrid"
-          aria-describedby="plot"
+          id="floatingTextarea2"
+          style="height: 100px"
           placeholder="Enter plot"
           ngModel
           name="summary"
           required
-        />
-        <label for="floatingInputGrid">plot</label>
+        ></textarea>
+        <label for="floatingTextarea2">plot</label>
       </div>
+
       <div class="form-floating">
         <input
           type="text"
